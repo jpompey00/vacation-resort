@@ -71,44 +71,62 @@
             <div class="row">
                 <div class="col">
                     <!--Add verification to all of these-->
+                    <!--Add an error output that won't continue unless all fields are inputted-->
                     <label for="nameTextBox">Name: </label>
                     <input id="nameTextBox" type="text">
                     <br>
                     <label for="emailTextBox">Email: </label>
                     <input id="emailTextBox" type="text"> <!--Add Email validation-->
                     <br>
-                    <label for="checkInDateTextBox">Check in Date: </label>
-                    <input id="checkInDateTextBox" type="date">
+                    <label for="checkInDateBox">Check in Date: </label>
+                    <input id="checkInDateBox" type="date" required>
                     <br>
-                    <label for="numberOfDaysTextBox">Number of days for visit: </label>
-                    <input id="numberOfDaysTextBox" type="number" min=1 max=28>
+                    <label for="numberOfDaysNumberBox">Number of days for visit: </label>
+                    <input id="numberOfDaysNumberBox" type="number" min=1 max=28>
                     <br>
                     <p>Room type: </p>
                     <input id="queenRadioButton" type="radio" name="roomTypeRadioButtons">
                     <label for="queenRadioButton">Queen</label>
                     <input id="kingRadioButton" type="radio" name="roomTypeRadioButtons">
                     <label for="kingRadioButton">King</label>
-                    <input id="2BedroomRadioButton" type="radio" name="roomTypeRadioButtons">
-                    <label for="2BedroomRadioButton">2 Bedroom Suite</label>
+                    <input id="TwoBedroomRadioButton" type="radio" name="roomTypeRadioButtons">
+                    <label for="TwoBedroomRadioButton">2 Bedroom Suite</label>
                     <br>
-                    <label for="numberOfAdults">Number of Adults: </label>
-                    <input id="numberOfAdults" type="number" min=1 max=4>
+                    <label for="numberOfAdultsNumberBox">Number of Adults: </label>
+                    <input id="numberOfAdultsNumberBox" type="number" min=1 max=4>
                     <br>
-                    <label for="numberOfChildren">Number of Children: </label>
-                    <input id="numberOfChildren" type="number" min=0 max=4>
+                    <label for="numberOfChildrenNumberBox">Number of Children: </label>
+                    <input id="numberOfChildrenNumberBox" type="number" min=0 max=4>
                     <br>
                     <p>Discounts</p>
                     <input id="noneDiscountRadioButton" type="radio" name="discountRadioButton">
                     <label for="noneDiscountRadioButton">None</label>
-                    <input id="SeniorDiscountRadioButton" type="radio" name="discountRadioButton">
-                    <label for="SeniorDiscountRadioButton">AAA/Senior</label>
+                    <input id="seniorDiscountRadioButton" type="radio" name="discountRadioButton">
+                    <label for="seniorDiscountRadioButton">AAA/Senior</label>
                     <input id="militaryDiscountRadioButton" type="radio" name="discountRadioButton">
                     <label for="militaryDiscountRadioButton">Military</label>
 
                     <br>
                     <input id="submitButton" value="submit" type="button">
                     <p>Current Price</p>
-                    <!--Add this-->
+                    <ul>
+                        <li>Original Room cost: </li>
+                        <li>Discount: </li>
+                        <li>Discounted Room Cost: </li>
+                        <li>Tax: </li>
+                        <li>Total Stay Cost: </li>
+                        <li>Confirmation Number: </li>
+                    </ul>
+
+                    <ul>
+                        <li id = "originalRoomCostOutput"><!--Original Room cost:--> </li>
+                        <li id = "discountOutput"><!--Discount: --> </li>
+                        <li id = "discountedRoomCostOutput"><!--Discounted Room Cost:--> </li>
+                        <li id = "taxOutput"><!--Tax: --> </li>
+                        <li id = "totalStayCostOutput"><!--Total Stay Cost: --> </li>
+                        <li id = "confirmationNumberOutput"><!--Confirmation Number:--></li>
+
+                    </ul>
                 </div>
             </div>
         </div>
