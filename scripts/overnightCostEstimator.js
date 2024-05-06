@@ -2,12 +2,14 @@
 //textbox elements
 const nameTextBox = document.getElementById("nameTextBox");
 const emailTextBox = document.getElementById("emailTextBox");
+
 //date textbox
 const checkInDateBox = document.getElementById("checkInDateBox");
 //number textbox elements
 const numberOfDaysNumberBox = document.getElementById("numberOfDaysNumberBox");
 const numberOfAdultsNumberBox = document.getElementById("numberOfAdultsNumberBox");
 const numberOfChildrenNumberBox = document.getElementById("numberOfChildrenNumberBox");
+
 
 //radio buttons
 const queenRadioButton = document.getElementById("queenRadioButton");
@@ -84,6 +86,7 @@ function onSubmitButtonClicked(){
     taxOutput.innerHTML = `$${tax.toFixed(2)}`;
     totalStayCostOutput.innerHTML = `$${totalStayCost.toFixed(2)}`;
     //this is so ugly
+    //TODO: make catch for if name doesn't have 3 characters
     confirmationNumberOutput.innerHTML = `${nameTextBox.value.substring(0,3).toUpperCase()}-${checkInDate.getMonth()}${checkInDate.getFullYear()}-${numberOfDays}:${numberOfAdultsNumberBox.value}:${numberOfChildrenNumberBox.value}`;
 }
 
