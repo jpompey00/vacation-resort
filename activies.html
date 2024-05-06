@@ -40,9 +40,10 @@
                                 Tools
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="overnightCostEstimator.html">Overnight Cost Estimator</a></li>
+                                <li><a class="dropdown-item" href="overnightCostEstimator.html">Overnight Cost
+                                        Estimator</a></li>
                                 <li><a class="dropdown-item" href="carRental.html">Car Rental Estimator</a></li>
-                                
+
                             </ul>
                         </li>
                     </ul>
@@ -62,8 +63,62 @@
             </div>
 
             <div class="row">
-                <div class="col">
 
+                <div class="col">
+                    <select id="activitySelectElement" name="">
+                        <option value=-1>Select a Option</option>
+                        <option id="artsAndCraftsOption" value="0">Arts/Crafts</option>
+                        <option id="adventuringOption" value="1">Adventure</option>
+                        <option id="museumsAndCultureOption" value="2">Museums/Culture</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <table>
+
+                        <tbody id = "tableHeaders" style = "display: none">
+                            <tr>
+                                <th>Category</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Cost</th>
+                            </tr>
+                        </tbody>
+
+
+
+                        <!--Arts and Crafts Rows-->
+                        <tbody id="artsAndCraftsTableRows" style = "display: none">
+                            <tr>
+                                <td>Arts/Crafts</th>
+                                <td>Candle Making</th>
+                                <td>placeholder</th>
+                                <td>7.99</th>
+                            </tr>
+                        </tbody>
+
+                        <!--Adventure Rows-->
+                        <tbody id="adventureTableRows" style = "display: none">
+                            <tr>
+                                <td>Adventure</th>
+                                <td>Candle Making</th>
+                                <td>placeholder</th>
+                                <td>7.99</th>
+                            </tr>
+                        </tbody>
+
+
+                        <!--Museums/Culture Rows-->
+                        <tbody id="museumsAndCultureTableRows" style = "display: none">
+                            <tr>
+                                <td>Museums/Culture</th>
+                                <td>Candle Making</th>
+                                <td>placeholder</th>
+                                <td>7.99</th>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -85,7 +140,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="scripts/site.js"></script>
+    <script src="scripts/activities.js"></script>
 </body>
 
 </html>
